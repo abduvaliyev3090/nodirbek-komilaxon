@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  background: rgb(var(--c-ink));
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  min-height: 100svh;
+  background: rgb(var(--c-ink));
+  color: rgb(var(--c-ivory));
+  font-family: var(--font-sans), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: rgb(var(--c-gold) / 0.35);
+  color: rgb(var(--c-ivory));
+}
+
+/* Subtle cinematic film grain over the whole page */
+.film-grain {
+  position: fixed;
+  inset: -50%;
+  z-index: 60;
+  pointer-events: none;
+  opacity: var(--grain, 0.07);
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 .9 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+  mix-blend-mode: overlay;
+}
+
+@layer components {
+  .focus-ring {
+    @apply outline-none focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-gold;
+  }
+
+  /* small, wide-tracked label */
+  .eyebrow {
+    @apply font-sans text-[0.68rem] uppercase tracking-cine text-gold sm:text-xs;
+  }
+
+  .display {
+    @apply font-serif font-light leading-[0.95] tracking-tight text-ivory;
+  }
+
+  .btn-gold {
+    @apply focus-ring inline-flex min-h-12 items-center justify-center gap-3 border border-gold/70 px-8 py-3 font-sans text-[0.72rem] uppercase tracking-cine text-gold-soft transition-colors duration-500 hover:bg-gold hover:text-ink disabled:cursor-not-allowed disabled:opacity-50 disabled:hover:bg-transparent disabled:hover:text-gold-soft;
+  }
+
+  .btn-quiet {
+    @apply focus-ring inline-flex min-h-11 items-center justify-center gap-2 px-3 py-2 font-sans text-[0.7rem] uppercase tracking-wide2 text-mist underline-offset-8 transition-colors hover:text-ivory hover:underline;
+  }
+
+  .field {
+    @apply focus-ring w-full border-0 border-b border-ivory/25 bg-transparent px-0 py-3 font-serif text-xl text-ivory placeholder:text-mist/60 transition-colors focus:border-gold;
+  }
+
+  /* editable placeholder text such as "[ Venue name ]" */
+  .is-placeholder {
+    @apply italic text-mist;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

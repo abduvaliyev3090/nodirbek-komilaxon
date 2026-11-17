@@ -1,0 +1,35 @@
+{
+  "name": "vow-films-invitation",
+  "version": "1.0.0",
+  "private": true,
+  "description": "VOW FILMS · ETERNAL LOVE — cinematic wedding invitation (website + film template).",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "check": "tsx scripts/check-config.ts",
+    "placeholders": "node scripts/generate-placeholders.mjs",
+    "film:studio": "npm --prefix film run studio",
+    "film:render": "npm --prefix film run render"
+  },
+  "dependencies": {
+    "framer-motion": "^12.0.0",
+    "next": "^15.1.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.17",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

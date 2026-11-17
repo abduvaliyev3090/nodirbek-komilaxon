@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1500" viewBox="0 0 1200 1500" role="img">
+<title>Placeholder: candlelight</title>
+<desc>Placeholder artwork generated for VOW FILMS · ETERNAL LOVE. Replace with a real photograph.</desc>
+<defs>
+
+<filter id="soft" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="22"/></filter>
+<filter id="soft2" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="9"/></filter>
+<filter id="grain" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".8" numOctaves="2" seed="3" result="n"/><feColorMatrix in="n" values="0 0 0 0 1  0 0 0 0 .95  0 0 0 0 .85  0 0 0 .55 0"/></filter>
+<radialGradient id="vig" cx="50%" cy="48%" r="75%"><stop offset="55%" stop-color="#000" stop-opacity="0"/><stop offset="100%" stop-color="#000" stop-opacity=".78"/></radialGradient>
+</defs>
+<rect width="1200" height="1500" fill="#070605"/><ellipse cx="160" cy="853" rx="184" ry="282" fill="#e7b865" opacity=".22" filter="url(#soft)"/>
+<ellipse cx="160" cy="873" rx="16" ry="42" fill="#ffe9b0"/>
+<rect x="151" y="905" width="18" height="264" fill="#e9dcc0" opacity=".72"/><ellipse cx="268" cy="892" rx="113" ry="173" fill="#e7b865" opacity=".22" filter="url(#soft)"/>
+<ellipse cx="268" cy="912" rx="10" ry="26" fill="#ffe9b0"/>
+<rect x="259" y="944" width="18" height="335" fill="#e9dcc0" opacity=".72"/><ellipse cx="394" cy="877" rx="139" ry="213" fill="#e7b865" opacity=".22" filter="url(#soft)"/>
+<ellipse cx="394" cy="897" rx="12" ry="31" fill="#ffe9b0"/>
+<rect x="385" y="929" width="18" height="318" fill="#e9dcc0" opacity=".72"/><ellipse cx="502" cy="796" rx="181" ry="277" fill="#e7b865" opacity=".22" filter="url(#soft)"/>
+<ellipse cx="502" cy="816" rx="16" ry="41" fill="#ffe9b0"/>
+<rect x="493" y="848" width="18" height="264" fill="#e9dcc0" opacity=".72"/><ellipse cx="621" cy="797" rx="194" ry="297" fill="#e7b865" opacity=".22" filter="url(#soft)"/>
+<ellipse cx="621" cy="817" rx="17" ry="44" fill="#ffe9b0"/>
+<rect x="612" y="849" width="18" height="283" fill="#e9dcc0" opacity=".72"/><ellipse cx="741" cy="866" rx="186" ry="285" fill="#e7b865" opacity=".22" filter="url(#soft)"/>
+<ellipse cx="741" cy="886" rx="16" ry="42" fill="#ffe9b0"/>
+<rect x="732" y="918" width="18" height="324" fill="#e9dcc0" opacity=".72"/><ellipse cx="859" cy="906" rx="172" ry="263" fill="#e7b865" opacity=".22" filter="url(#soft)"/>
+<ellipse cx="859" cy="926" rx="15" ry="39" fill="#ffe9b0"/>
+<rect x="850" y="958" width="18" height="263" fill="#e9dcc0" opacity=".72"/><ellipse cx="950" cy="846" rx="179" ry="274" fill="#e7b865" opacity=".22" filter="url(#soft)"/>
+<ellipse cx="950" cy="866" rx="15" ry="41" fill="#ffe9b0"/>
+<rect x="941" y="898" width="18" height="282" fill="#e9dcc0" opacity=".72"/><ellipse cx="1068" cy="797" rx="173" ry="266" fill="#e7b865" opacity=".22" filter="url(#soft)"/>
+<ellipse cx="1068" cy="817" rx="15" ry="39" fill="#ffe9b0"/>
+<rect x="1059" y="849" width="18" height="339" fill="#e9dcc0" opacity=".72"/><rect y="1230" width="1200" height="270" fill="#030302" opacity=".85"/>
+<rect width="1200" height="1500" fill="url(#vig)"/>
+<rect width="1200" height="1500" filter="url(#grain)" opacity=".09"/>
+</svg>
